@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+  background-color: #0a0a0d;
+  font-family: 'Orbitron', sans-serif;
+  color: #0f0;
+  box-sizing: border-box;
+}
+
+#buttonList {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+#filterpanel {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.7);
+  max-width: 100%;
+  overflow: none;
+}
+
+#exitbutton {
+  order: -1;
+}
+
+#fuzzysearch, #sortbutton, #exitbutton {
+  padding: 10px 10px;
+  font-size: 1.2rem;
+  color: #0f0;
+  border: 1px solid #0f0;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  will-change: transform;
+}
+
+#fuzzysearch:focus, #sortbutton:focus, #fuzzysearch:active, #sortbutton:active,
+#exitbutton:focus, #exitbutton:active {
+  transform: scale(1.1);
+}
+
+#fuzzysearch::placeholder {
+  color: #0f0;
+}
+
+#fuzzysearch:hover, #sortbutton:hover, #exitbutton:hover {
+  background-color: #0f0;
+  color: #0a0a0d;
+} 
+
+#unorderedlist {
+  margin-top: 80px;
+  width: 90%;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+#unorderedlist li {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #0f0;
+  transition: background 0.3s ease-in-out;
+}
+
+#unorderedlist li button {
+  width: 100%;
+  font-size: 1.2rem;
+  color: #0f0;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+}
+
+#unorderedlist li:hover {
+  background-color: #0f0;
+}
+
+#unorderedlist li:hover button {
+  color: #0a0a0d;
+}
