@@ -17,11 +17,6 @@ const {
   assign
 } = actions
 
-/*
-   * Add sort A-Z, Z-A buttons, plus related ability of list to rebuild mulyiple times in lifespan of ChatList
-   * Add fuzzy filter box element which on input starts a timer (w/ configurable timeout param maybe starting at 500ms). It always restarts on new input. if allowed to timeout, it then initiates a list resort and subsequent rebuild.
- */
-
 const ListItem = createMachine({
   predictableActionArguments: true,
   initial: "idle",
